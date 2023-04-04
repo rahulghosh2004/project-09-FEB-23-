@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media query project-01</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .box{
+            height: 300px;
+            width: 500px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        .box1{
+            background-color: rgb(128, 247, 203);
+            font-size: 10px;
+        }
+        .box2{
+            background-color: rgb(44, 158, 46);
+            font-size: 11px;
+        }
+        .box3{
+            background-color: rgb(196, 152, 33);
+            font-size: 15px;
+        }
+        .box4{
+            background-color: rgb(114, 255, 250);
+            font-size: 17px;
+        }
+        .box5{
+            background-color: rgb(201, 54, 91);
+            font-size: 20px;
+        }
+
+        @media screen and (min-width: 1440px){
+            .box1{
+                margin: auto;
+            }
+            .box2{
+                display: none;
+            }
+            .box3{
+                display: none;
+            }
+            .box4{
+                display: none;
+            }
+            .box5{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 1024px) and (max-width: 1439px){
+            .box1{
+                display: none;
+            }
+            .box2{
+                margin: auto;
+            }
+            .box3{
+                display: none;
+            }
+            .box4{
+                display: none;
+            }
+            .box5{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px){
+            .box1{
+                display: none;
+            }
+            .box2{
+                display: none;
+            }
+            .box3{
+                margin: auto;
+                width: 450px;
+            }
+            .box4{
+                display: none;
+            }
+            .box5{
+                display: none;
+            }
+        }
+        @media screen and (min-width: 426px) and (max-width: 767px){
+            .box1{
+                display: none;
+            }
+            .box2{
+                display: none;
+            }
+            .box3{
+                display: none;
+            }
+            .box4{
+                margin: auto;
+                width: 450px;
+            }
+            .box5{
+                display: none;
+            }
+        }
+        @media screen and (max-width: 425px){
+            .box1{
+                display: none;
+            }
+            .box2{
+                display: none;
+            }
+            .box3{
+                display: none;
+            }
+            .box4{
+                display: none;
+            }
+            .box5{
+                margin: auto;
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1">
+            <h1>This is a Media Query demo page.</h1>
+        </div>
+        <div class="box box2">
+            <h1>This is a Media Query demo page.</h1>
+        </div>
+        <div class="box box3">
+            <h1>This is a Media Query demo page.</h1>
+        </div>
+        <div class="box box4">
+            <h1>This is a Media Query demo page.</h1>
+        </div>
+        <div class="box box5">
+            <h1>This is a Media Query demo page.</h1>
+        </div>
+    </div>
+</body>
+</html>
